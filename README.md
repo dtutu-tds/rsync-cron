@@ -61,7 +61,7 @@ rsync --archive --delete --exclude='.*' --checksum --verbose $HOME/ /tmp/backup
 
 **Скриншот 1 - Настройка crontab:**
 
-![Задание 2 - Настройка crontab](screenshot/2.0.png)
+![Задание 2 - Настройка crontab](screenshot/2.2.png)
 
 **Комментарий к результату 1:**
 
@@ -77,7 +77,7 @@ rsync --archive --delete --exclude='.*' --checksum --verbose $HOME/ /tmp/backup
 
 **Скриншот 3 - Структура резервной копии:**
 
-![Задание 2 - Структура backup](screenshot/2.2.png)
+![Задание 2 - Структура backup](screenshot/2.5.png)
 
 **Комментарий к результату 3:**
 
@@ -85,7 +85,7 @@ rsync --archive --delete --exclude='.*' --checksum --verbose $HOME/ /tmp/backup
 
 **Скриншот 4 - Лог-файл резервного копирования:**
 
-![Задание 2 - Лог-файл](screenshot/2.3.png)
+![Задание 2 - Лог-файл](screenshot/2.5.png)
 
 **Комментарий к результату 4:**
 
@@ -93,7 +93,7 @@ rsync --archive --delete --exclude='.*' --checksum --verbose $HOME/ /tmp/backup
 
 **Скриншот 5 - Записи в системном логе:**
 
-![Задание 2 - Системный лог](screenshot/2.4.png)
+![Задание 2 - Системный лог](screenshot/2.6.png)
 
 **Комментарий к результату 5:**
 
