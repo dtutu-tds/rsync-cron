@@ -1,0 +1,30 @@
+=== Результат выполнения задания 1: команда rsync ===
+
+Команда:
+rsync --archive --delete --exclude='.*' --checksum --verbose test_backup_demo/ /tmp/backup/
+
+Первое выполнение (создание backup):
+sending incremental file list
+./
+documents/
+documents/important_doc.txt
+documents/report.md
+photos/
+photos/vacation.jpg
+projects/
+projects/script.py
+
+sent 1.610 bytes  received 111 bytes  3.442,00 bytes/sec
+total size is 1.084  speedup is 0,63
+
+Проверка исключения скрытых файлов:
+- Исходная директория содержит: .gitignore, .hidden_file, .hidden_dir/
+- В backup директории скрытые файлы отсутствуют (проверено командой find)
+
+Повторное выполнение (проверка зеркального копирования):
+sending incremental file list
+
+sent 334 bytes  received 15 bytes  698,00 bytes/sec
+total size is 1.084  speedup is 3,11
+
+Результат: Команда rsync успешно создает зеркальную копию с исключением скрытых файлов.
